@@ -3,7 +3,7 @@ class Solution(object):
         for number in nums:
             index = nums.index(number)
             if target-number in nums[nums.index(number)+1:]:
-                if index == nums.index(target-number): #two
+                if index == nums.index(target-number): #current and target is the same
                     return [nums.index(number), nums[index+1:].index(target-number)+1+index]
                 else:
                     return [nums.index(number), nums.index(target-number)]
