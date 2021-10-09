@@ -7,3 +7,6 @@ class Solution(object):
                     return [nums.index(number), nums[index+1:].index(target-number)+1+index]
                 else:
                     return [nums.index(number), nums.index(target-number)]
+
+s = Solution()
+print (s.twoSum([3,3],6))
